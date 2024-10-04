@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    image: "company-serviceName"
+    container_name: "app-serviceName"
+    command: ["bash"]
+    tty: true
+    stdin_open: true
+    ports:
+    - "5000:5000"
+    volumes:
+    - ./: /App-Service
+    restart: always
