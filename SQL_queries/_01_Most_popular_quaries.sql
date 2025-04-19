@@ -114,7 +114,7 @@ and e.sal > m.sal;
 select e.deptno, count(e.empno) no_of_employee from emp e group by e.deptno
 order by no_of_employee DESC;
 
-
+##########################################################################################################################
 CREATE TABLE PLAYER (
 ID INT,  
 FIRST VARCHAR(25),
